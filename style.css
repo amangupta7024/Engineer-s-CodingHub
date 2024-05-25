@@ -14,6 +14,8 @@ html,body{
     font-family: "Montserrat", sans-serif;
 }
 
+
+/* navbar styling start */
 nav{
     padding: 10px 30px;
     display: flex;
@@ -83,8 +85,18 @@ nav ul li a:hover{
     font-size: 30px;
 }
 
-.accordion {
-    margin-top: 20px;
+ /* DSA Dropdown */
+ .DSA-dropdown {
+    background: black;
+    border: none;
+  }
+
+.DSA-dropdown:hover{
+ background: #323442; ;
+}
+
+.item:hover{
+    background: none
 }
 
 
@@ -114,6 +126,12 @@ nav ul li a:hover{
         padding-bottom: 10px;
         transition: all 0.5s;
     }
+}
+
+/* navbar styling end  */
+
+.accordion {
+    margin-top: 20px;
 }
 
 .question {
@@ -150,3 +168,6 @@ nav ul li a:hover{
     }
 
   }
+
+
+ 
