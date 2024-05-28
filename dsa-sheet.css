@@ -128,32 +128,11 @@ nav ul li a:hover{
     }
 }
 
-/* navbar styling end  */
-
-/* main container */
-/* .container {
-    max-width: 800px;
-    margin-top: 50px;
-}
-.table {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.table th {
-    background-color: #007bff;
-    color: #fff;
-}
-.question-link {
-    color: #007bff;
-}
-.video-icon {
-    color: #dc3545;
-} */
 
 table {
-    width: 100%;
+    width: 100%;;
     border-collapse: collapse;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 th, td {
@@ -171,6 +150,7 @@ td input[type="checkbox"] {
 }
 
 .difficulty {
+    width: 60px;
     padding: 5px 10px;
     border-radius: 4px;
     color: #fff;
@@ -181,8 +161,23 @@ td input[type="checkbox"] {
     cursor: pointer;
 }
 
+.medium{
+    background-color: rgb(217, 217, 26);
+    color: black;
+    cursor: pointer;
+}
+
 .fas, .fab {
     color: #f31a49;
     font-size: 30px;
     cursor: pointer;
+}
+
+.custom {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
 }
