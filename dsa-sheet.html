@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineer's CodingHub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dsa-sheet.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>Engineer's CodingHub</span>
+        <p>Let's Code with me !</p>
+        <!-- <img src="../assets/logo.jpeg" alt=""> -->
+      </div>
+      <ul id="menuList">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle DSA-dropdown"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            DSA
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="item">
+              <a class="dropdown-item" href="dsa-sheet.html">DSA Sheet</a>
+            </li>
+            <li class="item">
+              <a class="dropdown-item" href="#">A to Z DSA</a>
+            </li>
+          </ul>
+        </div>
+        <li><a href="">Articles</a></li>
+        <li><a href="">Interview prepration</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+
+    <div class="accordion" id="lectureAccordion">
+      <!-- Array Questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse1"
+            aria-expanded="false"
+            aria-controls="collapse1"
+          >
+            Array
+          </button>
+        </h2>
+        <div
+          id="collapse1"
+          class="accordion-collapse collapse show"
+          aria-labelledby="heading1"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Roman To Integer</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/roman-to-integer/description/"
+                        ><img src="images/leetcode 1.png" alt="leetcode"
+                      /></a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Valid Parantheses</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/valid-parentheses/description/"
+                        ><img src="images/leetcode 1.png" alt="leetcode"
+                      /></a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Remove Duplicate from sorted array</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/"
+                        ><img src="images/leetcode 1.png" alt="leetcode"
+                      /></a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+
+                <tr>
+                  <td>Remove Element</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/remove-element/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Best Time to Buy and Sell Stock</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Best Time to Buy and Sell Stock II</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Intersection of Two Arrays II</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Single Number</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/single-number/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Contains Duplicate</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/contains-duplicate/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Plus One</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/plus-one/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Move Zeroes</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/move-zeroes/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Rotate Image</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/rotate-image/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>3Sum</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/3sum/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>4Sum</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/4sum/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>
+                    Find First and Last Position of Element in Sorted Array
+                  </td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Group Anagrams</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/group-anagrams/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Reduce Array Size to The Half</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/reduce-array-size-to-the-half/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Merge Intervals</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/merge-intervals/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- String questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            String
+          </button>
+        </h2>
+        <div
+          id="collapse3"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data Types</td>
+                  <td>
+                    <div>
+                      <img src="images/leetcode 1.png" alt="leetcode" />
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Data Types</td>
+                  <td><img src="images/gfgIcon.png" alt="gfg" /></td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Data Types</td>
+                  <td><img src="images/leetcode 1.png" alt="leetcode" /></td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Pointer questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse8"
+            aria-expanded="false"
+            aria-controls="collapse2"
+            
+          >
+            2 Pointer
+          </button>
+        </h2>
+        <div
+          id="collapse8"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Intersection of Two Arrays</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/intersection-of-two-arrays/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Maximum Ascending Subarray Sum</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/maximum-ascending-subarray-sum/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Backspace String Compare</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/backspace-string-compare/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Long Pressed Name</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/long-pressed-name/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Fruit Into Baskets</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/fruit-into-baskets/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Max Consecutive Ones III</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/max-consecutive-ones-iii/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Container With Most Water</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/container-with-most-water/">
+                        <img src="images/leetcode 1.png" alt="leetcode">
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stack Questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            Stack
+          </button>
+        </h2>
+        <div
+          id="collapse4"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Easy -->
+                <tr>
+                  <td>Valid Parentheses</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/valid-parentheses/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Implement Queue using Stacks</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/implement-queue-using-stacks/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Min Stack</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/min-stack/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+
+                <!-- Medium -->
+                <tr>
+                  <td>Design Circular Queue</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/design-circular-queue/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Decode String</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/decode-string/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Open the Lock</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/open-the-lock/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Daily Temperatures</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/daily-temperatures/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Minimum Add to Make Parentheses Valid</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Queue Questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse5"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            Queue
+          </button>
+        </h2>
+        <div
+          id="collapse5"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Easy -->
+                <tr>
+                  <td>Valid Parentheses</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/valid-parentheses/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Implement Queue using Stacks</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/implement-queue-using-stacks/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Min Stack</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/min-stack/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+
+                <!-- Medium -->
+                <tr>
+                  <td>Design Circular Queue</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/design-circular-queue/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Decode String</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/decode-string/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Open the Lock</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/open-the-lock/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Daily Temperatures</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/daily-temperatures/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Minimum Add to Make Parentheses Valid</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linked list Questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            Linked List
+          </button>
+        </h2>
+        <div
+          id="collapse2"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Easy -->
+                <tr>
+                  <td>Delete Node in a Linked List</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/delete-node-in-a-linked-list/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Remove Nth Node From End of List</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Merge Two Sorted Lists</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/merge-two-sorted-lists/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Palindrome Linked List</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/palindrome-linked-list/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Linked List Cycle</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/linked-list-cycle/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+
+                <!-- Medium -->
+                <tr>
+                  <td>Intersection of Two Linked Lists</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/intersection-of-two-linked-lists/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Remove Linked List Elements</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/remove-linked-list-elements/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Middle of the Linked List</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/middle-of-the-linked-list/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Merge k Sorted Lists</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/merge-k-sorted-lists/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Binary Search Questions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse7"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            Binary Search
+          </button>
+        </h2>
+        <div
+          id="collapse7"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#lectureAccordion"
+        >
+          <div class="accordion-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROBLEM</th>
+                  <th>PRACTICE</th>
+                  <th>DIFFICULTY</th>
+                  <th>YOUTUBE</th>
+                  <th>APPROACH AND CODE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Easy -->
+                <tr>
+                  <td>Binary Search</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/binary-search/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Intersection of Two Arrays</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/intersection-of-two-arrays/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>First Bad Version</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/first-bad-version/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Arranging Coins</td>
+                  <td>
+                    <div>
+                      <a href="https://leetcode.com/problems/arranging-coins/">
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Search Insert Position</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/search-insert-position/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty easy">Easy</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+
+                <!-- Medium -->
+                <tr>
+                  <td>Search in Rotated Sorted Array</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/search-in-rotated-sorted-array/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>
+                    Find First and Last Position of Element in Sorted Array
+                  </td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Kth Smallest Element in a BST</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Find Peak Element</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/find-peak-element/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+                <tr>
+                  <td>Split Array Largest Sum</td>
+                  <td>
+                    <div>
+                      <a
+                        href="https://leetcode.com/problems/split-array-largest-sum/"
+                      >
+                        <img src="images/leetcode 1.png" alt="leetcode" />
+                      </a>
+                    </div>
+                  </td>
+                  <td><span class="difficulty medium">Medium</span></td>
+                  <td><i class="fab fa-youtube"></i></td>
+                  <td><i class="fa-regular fa-newspaper custom"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
