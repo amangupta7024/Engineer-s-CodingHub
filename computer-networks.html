@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineer's CodingHub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="computer-network.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>Engineer's CodingHub</span>
+        <p>Let's Code with me !</p>
+        <!-- <img src="../assets/logo.jpeg" alt=""> -->
+      </div>
+      <ul id="menuList">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle DSA-dropdown"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            DSA
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="item">
+              <a class="dropdown-item" href="dsa-sheet.html">DSA Sheet</a>
+            </li>
+            <li class="item">
+              <a class="dropdown-item" href="#">A to Z DSA</a>
+            </li>
+          </ul>
+        </div>
+        <li><a href="">Articles</a></li>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle DSA-dropdown"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Interview Prepration
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="item"><a class="dropdown-item" href="#">OOPS</a></li>
+            <li class="item"><a class="dropdown-item" href="#">DBMS</a></li>
+            <li class="item">
+              <a class="dropdown-item" href="#">Operating System</a>
+            </li>
+            <li class="item">
+              <a class="dropdown-item" href="#">Computer Networks</a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <header>
+      <h1>Computer Networks</h1>
+    </header>
+    <main>
+      <div class="section">
+        <h2>Network</h2>
+        <p>
+          A network is a set of devices that are connected with a physical media
+          link. In a network, two or more nodes are connected by a physical link
+          or two or more networks are connected by one or more nodes. A network
+          is a collection of devices connected to each other to allow the
+          sharing of data.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Network Topology</h2>
+        <p>
+          Network topology specifies the layout of a computer network. It shows
+          how devices and cables are connected to each other.
+        </p>
+        <div class="topology">
+          <h3>Star</h3>
+          <ol>
+            <li>
+              Star topology is a network topology in which all the nodes are
+              connected to a single device known as a central device.
+            </li>
+            <!-- <li>
+              Star topology requires more cable compared to other topologies.
+              Therefore, it is more robust as a failure in one cable will only
+              disconnect a specific computer connected to this cable.
+            </li> -->
+            <li>
+              If the central device is damaged, then the whole network fails.
+            </li>
+            <li>
+              Star topology is very easy to install, manage and troubleshoot. It
+              is commonly used in office and home networks.
+            </li>
+          </ol>
+        </div>
+        <div class="topology">
+          <h3>Ring</h3>
+          <ol>
+            <li>
+              Ring topology is a network topology in which nodes are exactly
+              connected to two or more nodes.
+            </li>
+            <li>
+              It does not need any central server to control the connectivity
+              among the nodes.
+            </li>
+            <li>
+              If the single node is damaged, then the whole network fails.
+            </li>
+            <!-- <li>
+              Ring topology is very rarely used as it is expensive, difficult to
+              install and manage.
+            </li> -->
+            <li>
+              Examples of Ring topology are SONET network, SDH network, etc.
+            </li>
+          </ol>
+        </div>
+        <div class="topology">
+          <h3>Bus</h3>
+          <ol>
+            <li>
+              Bus topology is a network topology in which all the nodes are
+              connected to a single cable known as a central cable or bus.
+            </li>
+            <li>
+              It acts as a shared communication medium, i.e., if any device
+              wants to send the data to other devices, then it will send the
+              data over the bus which in turn sends the data to all the attached
+              devices.
+            </li>
+            <li>Bus topology is useful for a small number of devices.</li>
+            <li>As if the bus is damaged then the whole network fails.</li>
+          </ol>
+        </div>
+        <div class="topology">
+          <h3>Mesh</h3>
+          <ol>
+            <li>
+              Mesh topology is a network topology in which all the nodes are
+              individually connected to other nodes.
+            </li>
+
+            <li>
+              It does not need any central switch or hub to control the
+              connectivity among the nodes.
+            </li>
+            <li>
+              Mesh topology is categorized into two parts: Fully connected mesh
+              topology: In this topology, all the nodes are connected to each
+              other. Partially connected mesh topology: In this topology, all
+              the nodes are not connected to each other.
+            </li>
+            <!-- <li>
+              It is robust as a failure in one cable will only disconnect the
+              specified computer connected to this cable.
+            </li>
+            <li>
+              topology is rarely used as installation and configuration are
+              difficult when connectivity gets more.
+            </li> -->
+            <li>Cabling cost is high as it requires bulk wiring.</li>
+          </ol>
+        </div>
+        <div class="topology">
+          <h3>Tree</h3>
+          <ol>
+            <li>
+              Tree topology is a combination of star and bus topology. It is
+              also known as the expanded star topology.
+            </li>
+            <li>
+              In tree topology, all the star networks are connected to a single
+              bus.
+            </li>
+            <li>Ethernet protocol is used in this topology.</li>
+            <li>
+              In this, the whole network is divided into segments known as star
+              networks which can be easily maintained. If one segment is
+              damaged, there is no effect on other segments.
+            </li>
+            <li>
+              Tree topology depends on the "main bus," and if it breaks, then
+              the whole network gets damaged
+            </li>
+          </ol>
+        </div>
+        <div class="topology">
+          <h3>Hybrid</h3>
+          <ol>
+            <li>
+              A hybrid topology is a combination of different topologies to form
+              a resulting topology.
+            </li>
+            <li>
+              If star topology is connected with another star topology, then it
+              remains a star topology. If star topology is connected with
+              different topology, then it becomes a Hybrid topology.
+            </li>
+            <li>
+              It provides flexibility as it can be implemented in a different
+              network environment.
+            </li>
+          </ol>
+        </div>
+        <!-- Add more topology sections for Bus, Mesh, Tree, and Hybrid  -->
+      </div>
+      <div class="section">
+        <h2>Different Types of Networks</h2>
+        <ul>
+          <li>
+            <span>PAN (Personal Area Network) - </span>Its range limit is up to
+            10 meters. It is created for personal use. Generally, personal
+            devices are connected to this network. For example computers,
+            telephones, fax, printers, etc.
+          </li>
+          <li>
+            <span>LAN (Local Area Network)</span>It is used for a small
+            geographical location like office, hospital, school, etc.
+          </li>
+          <li>
+            <span>HAN (House Area Network)</span>It is actually a LAN that is
+            used within a house and used to connect homely devices like personal
+            computers, phones, printers, etc.
+          </li>
+          <li>
+            <span>CAN (Campus Area Network)</span>It is a connection of devices
+            within a campus area which links to other departments of the
+            organization within the same campus.
+          </li>
+          <li>
+            <span>MAN (Metropolitan Area Network)</span>It is used to connect
+            the devices which span to large cities like metropolitan cities over
+            a wide geographical area.
+          </li>
+          <li>
+            <span>WAN (Wide Area Network)</span>It is used over a wide
+            geographical location that may range to connect cities and
+            countries.
+          </li>
+          <li>
+            <span>GAN (Global Area Network)</span>It uses satellites to connect
+            devices over the global area.
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>VPN (Virtual Private Network)</h2>
+        <p>
+          VPN or the Virtual Private Network is a private WAN (Wide Area
+          Network) built on the internet. It allows the creation of a secured
+          tunnel (protected network) between different networks using the
+          internet (public network). By using the VPN, a client can connect to
+          the organization's network remotely.
+        </p>
+        <h3>Advantages of VPN</h3>
+        <ol>
+          <li>
+            VPN is used to connect offices in different geographical locations
+            remotely and is cheaper when compared to WAN connections.
+          </li>
+          <li>
+            VPN is used for secure transactions and confidential data transfer
+            between multiple offices located in different geographical
+            locations.
+          </li>
+          <li>
+            VPN keeps an organization's information secured against any
+            potential threats or intrusions by using virtualization.
+          </li>
+          <li>
+            VPN encrypts the internet traffic and disguises the online identity.
+          </li>
+        </ol>
+        <h3>Types of VPN</h3>
+        <ul>
+          <li>Access VPN</li>
+          <li>
+            Site-to-Site VPN
+            <ul>
+              <li>Intranet VPN</li>
+              <li>Extranet VPN</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>IPV4 Address</h2>
+        <p>
+          An IP address is a 32-bit dynamic address of a node in the network. An
+          IPv4 address has 4 octets of 8-bit each with each number with a value
+          up to 255. IPv4 classes are differentiated based on the number of
+          hosts it supports on the network. There are five types of IPv4 classes
+          and are based on the first octet of IP addresses which are classified
+          as Class A, B, C, D, or E.
+        </p>
+
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr class="table-head">
+              <th scope="col">IPv4 Class</th>
+              <th scope="col">IPv4 Start Address</th>
+              <th scope="col">IPv4 End Address</th>
+              <th scope="col">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">A</th>
+              <td>0.0.0.0</td>
+              <td>127.255.255.255</td>
+              <td>Used for large Network</td>
+            </tr>
+            <tr>
+              <th scope="row">B</th>
+              <td>128.0.0.0</td>
+              <td>191.255.255.255</td>
+              <td>Used for medium size network</td>
+            </tr>
+            <tr>
+              <th scope="row">C</th>
+              <td>192.0.0.0</td>
+              <td>223.255.255.255</td>
+              <td>Used for local area network</td>
+            </tr>
+            <tr>
+              <th scope="row">D</th>
+              <td>224.0.0.0</td>
+              <td>239.255.255.255</td>
+              <td>Reserved for Multicasting</td>
+            </tr>
+            <tr>
+              <th scope="row">D</th>
+              <td>240.0.0.0</td>
+              <td>255.255.255.254</td>
+              <td>Study and R&D</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <h2>IPv6 Address</h2>
+        <p>
+          IPv6 is the latest Internet Protocol version, replacing IPv4. It
+          offers many more addresses (128-bit) and simplifies network
+          communication. IPv6 supports automatic setup, improves security, and
+          enhances performance by using multicast instead of broadcast.
+          Transition methods like Dual Stack and Tunneling help move from IPv4
+          to IPv6. While it provides better performance and supports more
+          devices, transitioning requires updates and training.
+        </p>
+
+        <h4>Example</h4>
+        <pre>3001:0da8:75a3:0000:0000:8a2e:0370:7334s</pre>
+      </div>
+      <div class="section">
+        <h2>OSI Model</h2>
+      
+        <div class="container">
+          <div class="layer">
+                <span>Physical Layer</span>
+                
+                <ol>
+                  <li>It is the lowest layer of the OSI reference model.</li>
+                  <li>
+                    It is used for the transmission of an unstructured raw bit stream
+                    over a physical medium.
+                  </li>
+                  <li>
+                    Physical layer transmits the data either in the form of
+                    electrical/optical or mechanical form.
+                  </li>
+                  <li>
+                    The physical layer is mainly used for the physical connection
+                    between the devices, and such physical connection can be made by
+                    using twisted-pair cable, fibre-optic or wireless transmission
+                    media.
+                  </li>
+                </ol>
+              <li>
+                <span>Data Link Layer</span>
+                <ul>
+                  <li>
+                    It is used for transferring the data from one node to another
+                    node.
+                  </li>
+                  <li>
+                    It receives the data from the network layer and converts the data
+                    into data frames and then attaches the physical address to these
+                    frames which are sent to the physical layer.
+                  </li>
+                  <li>
+                    It enables the error-free transfer of data from one node to
+                    another node.
+                  </li>
+                  <li>
+                    <h5 class="function">Functions of Data-link layer:</h5>
+                    <ul>
+                      <li>
+                        Frame synchronization: Data-link layer converts the data into
+                        frames, and it ensures that the destination must recognize the
+                        starting and ending of each frame.
+                      </li>
+                      <li>
+                        Flow control: Data-link layer controls the data flow within
+                        the network.
+                      </li>
+                      <li>
+                        Error control: It detects and corrects the error occurred
+                        during the transmission from source to destination.
+                      </li>
+                      <li>
+                        Addressing: Data-link layers attach the physical address with
+                        the data frames so that the individual machines can be easily
+                        identified.
+                      </li>
+                      <li>
+                        Link management: Data-link layer manages the initiation,
+                        maintenance and termination of the link between the source and
+                        destination for the effective exchange of data.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Network Layer</span>
+                <ul>
+                  <li>
+                    Network layer converts the logical address into the physical
+                    address.
+                  </li>
+                  <li>
+                    The routing concept means it determines the best route for the
+                    packet to travel from source to the destination.
+                  </li>
+                  <li>
+                    <h5 class="function">Functions of network layer:</h5>
+                    <ul>
+                      <li>
+                        Routing: The network layer determines the best route from
+                        source to destination. This function is known as routing.
+                      </li>
+                      <li>
+                        Logical addressing: The network layer defines the addressing
+                        scheme to identify each device uniquely.
+                      </li>
+                      <li>
+                        Packetizing: The network layer receives the data from the
+                        upper layer and converts the data into packets. This process
+                        is known as packetizing.
+                      </li>
+                      <li>
+                        Internetworking: The network layer provides the logical
+                        connection between the different types of networks for forming
+                        a bigger network.
+                      </li>
+                      <li>
+                        Fragmentation: It is a process of dividing the packets into
+                        fragments.
+                      </li>
+                    </ul>
+                  
+              </li>
+              <li>
+                <span>Transport Layer</span>
+                <ul>
+                  <li>
+                    It delivers the message through the network and provides error
+                    checking so that no error occurs during the transfer of data.
+                  </li>
+                  <li>
+                    It provides two kinds of services:
+                    <ul>
+                      <li>
+                        Connection-oriented transmission: In this transmission, the
+                        receiver sends the acknowledgement to the sender after the
+                        packet has been received.
+                      </li>
+                      <li>
+                        Connectionless transmission: In this transmission, the
+                        receiver does not send the acknowledgement to the sender.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Session Layer</span>
+                <ul>
+                  <li>
+                    The main responsibility of the session layer is beginning,
+                    maintaining and ending the communication between the devices.
+                  </li>
+                  <li>
+                    Session layer also reports the error coming from the upper layers.
+                  </li>
+                  <li>
+                    Session layer establishes and maintains the session between the
+                    two users.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Presentation Layer</span>
+                <ul>
+                  <li>
+                    The presentation layer is also known as a Translation layer as it
+                    translates the data from one format to another format.
+                  </li>
+                  <li>
+                    At the sender side, this layer translates the data format used by
+                    the application layer to the common format and at the receiver
+                    side, this layer translates the common format into a format used
+                    by the application layer.
+                  </li>
+                  <li>
+                    <h5 class="function">Functions of presentation layer:</h5>
+                    <ul>
+                      <li>Character code translation</li>
+                      <li>Data conversion</li>
+                      <li>Data compression</li>
+                      <li>Data encryption</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Application Layer</span>
+                <ul>
+                  <li>Application layer enables the user to access the network.</li>
+                  <li>It is the topmost layer of the OSI reference model.</li>
+                  <li>
+                    Application layer protocols are file transfer protocol, simple
+                    mail transfer protocol, domain name system, etc.
+                  </li>
+                  <li>
+                    The most widely used application protocol is HTTP(Hypertext
+                    transfer protocol ). A user sends the request for the web page
+                    using HTTP.
+                  </li>
+                </ul>
+              </li>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="section">
+        <h2>TCP/IP Reference Model</h2>
+        <p>
+          It is a compressed version of the OSI model with only 4 layers. It was
+          developed by the US Department of Defence (DoD) in the 1860s. The name
+          of this model is based on 2 standard protocols used i.e. TCP
+          (Transmission Control Protocol) and IP (Internet Protocol).
+        </p>
+
+        <div class="container">
+          <ol>
+            <li>
+              <span>Link</span>
+              <p>
+                Decides which links such as serial lines or classic Ethernet
+                must be used to meet the needs of the connectionless internet
+                layer. <em>Ex - Sonet, Ethernet</em>
+              </p>
+            </li>
+            <li>
+              <span>Internet</span>
+              <p>
+                The internet layer is the most important layer which holds the
+                whole architecture together. It delivers the IP packets where
+                they are supposed to be delivered. <em>Ex - IP, ICMP.</em>
+              </p>
+            </li>
+            <li>
+              <span>Transport</span>
+              <p>
+                Its functionality is almost the same as the OSI transport layer.
+                It enables peer entities on the network to carry on a
+                conversation. <em>Ex - TCP, UDP (User Datagram Protocol)</em>
+              </p>
+            </li>
+            <li>
+              <span>Application</span>
+              <p>
+                It contains all the higher-level protocols.
+                <em>Ex - HTTP, SMTP, RTP, DNS.</em>
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section">
+        <h2>HTTP and HTTPS</h2>
+        <p>
+          HTTP is the HyperText Transfer Protocol which defines the set of rules
+          and standards on how the information can be transmitted on the World
+          Wide Web (WWW). It helps the web browsers and web servers for
+          communication. It is a 'stateless protocol' where each command is
+          independent with respect to the previous command. HTTP is an
+          application layer protocol built upon the TCP. It uses port 80 by
+          default.
+        </p>
+        <p>
+          HTTPS is the HyperText Transfer Protocol Secure or Secure HTTP. It is
+          an advanced and secured version of HTTP. On top of HTTP, SSL/TLS
+          protocol is used to provide security. It enables secure transactions
+          by encrypting the communication and also helps identify network
+          servers securely. It uses port 443 by default.
+        </p>
+      </div>
+      <div class="section">
+        <h2>DNS (Domain Name System)</h2>
+        <ol>
+          <li>
+            DNS is an acronym that stands for Domain Name System. DNS was
+            introduced by Paul Mockapetris and Jon Postel in 1983.
+          </li>
+          <li>
+            It is a naming system for all the resources over the internet which
+            includes physical nodes and applications. It is used to locate
+            resources easily over a network.
+          </li>
+          <li>
+            DNS is an internet which maps the domain names to their associated
+            IP addresses.
+          </li>
+          <li>
+            Without DNS, users must know the IP address of the web page that you
+            wanted to access.
+          </li>
+        </ol>
+
+        <h3>Working of DNS</h3>
+        <p>
+          If you want to visit the website of "shaurya", then the user will type
+          "https://www.shaurya.com" into the address bar of the web browser.
+          Once the domain name is entered, then the domain name system will
+          translate the domain name into the IP address which can be easily
+          interpreted by the computer. Using the IP address, the computer can
+          locate the web page requested by the user.
+        </p>
+
+        <h3>DNS Forwarder</h3>
+        <p>
+          A forwarder is used with a DNS server when it receives DNS queries
+          that cannot be resolved quickly. So it forwards those requests to
+          external DNS servers for resolution. A DNS server which is configured
+          as a forwarder will behave differently than the DNS server which is
+          not configured as a forwarder.
+        </p>
+      </div>
+      <div class="section">
+        <h2>
+          Difference Between TCP (Transmission Control Protocol) and UDP (User
+          Datagram Protocol)
+        </h2>
+        <ol>
+          <li>
+            TCP is a connection-oriented protocol, whereas UDP is a
+            connectionless protocol. A key difference between TCP and UDP is
+            speed, as TCP is comparatively slower than UDP. Overall, UDP is a
+            much faster, simpler, and efficient protocol, however,
+            retransmission of lost data packets is only possible with TCP.
+          </li>
+          <li>
+            TCP provides extensive error checking mechanisms. It is because it
+            provides flow control and acknowledgment of data. UDP has only the
+            basic error checking mechanism using checksums.
+          </li>
+        </ol>
+      </div>
+      <div class="section">
+        <h2>Important Protocols</h2>
+        <p>A protocol is a set of rules which is used to govern all the aspects of information communication. The main elements of a protocol are:</p>
+        <ol>
+          <li><strong>Syntax:</strong> It specifies the structure or format of the data. It also specifies the order in which they are presented.</li>
+          <li><strong>Semantics:</strong> It specifies the meaning of each section of bits.</li>
+          <li><strong>Timing:</strong> Timing specifies two characteristics: When data should be sent and how fast it can be sent.</li>
+        </ol>
+      
+        <h3>DHCP</h3>
+        <p>DHCP is the <strong>Dynamic Host Configuration Protocol</strong>. It is an application layer protocol used to auto-configure devices on IP networks enabling them to use the TCP and UDP-based protocols. The DHCP servers auto-assign the IPs and other network configurations to the devices individually which enables them to communicate over the IP network. It helps to get the subnet mask, IP address and helps to resolve the DNS. It uses port 67 by default.</p>
+      
+        <h3>SMTP</h3>
+        <p>
+          SMTP is the <strong>Simple Mail Transfer Protocol</strong>. SMTP sets the rule for
+          communication between servers. This set of rules helps the software to
+          transmit emails over the internet. It supports both End-to-End and
+          Store-and-Forward methods. It is in always-listening mode on port 25.
+        </p>
+        <h3>FTP</h3>
+        <p>FTP is a <strong> File Transfer Protocol</strong>. It is an application layer protocol used to transfer files and data reliably and efficiently between hosts. It can also be used to download files from remote servers to your computer. It uses port 27 by default.</p>
+      
+        <h3>ICMP</h3>
+        <p>ICMP is the <strong>Internet Control Message Protocol</strong>. It is a network layer protocol used for error handling. It is mainly used by network devices like routers for diagnosing the network connection issues and crucial for error reporting and testing if the data is reaching the preferred destination in time. It uses port 7 by default.</p>
+      
+        <h3>ARP</h3>
+        <p>ARP is <strong>Address Resolution Protocol</strong>. It is a network-level protocol used to convert the logical address i.e. IP address to the device's physical address i.e. MAC address. It can also be used to get the MAC address of devices when they are trying to communicate over the local network.</p>
+      
+        <h3>RIP</h3>
+        <p>RIP stands for <strong>Routing Information Protocol</strong>. It is accessed by the routers to send data from one network to another. RIP is a dynamic protocol which is used to find the best route from source to the destination over a network by using the hop count algorithm. Routers use this protocol to exchange the network topology information. This protocol can be used by small or medium-sized networks.</p>
+      </div>
+      <div class="section">
+        <h2>MAC address and IP address</h2>
+        <ol>
+          <li> Both MAC (Media Access Control) Address and IP Address are used to uniquely define a device on the internet. <strong>NIC Card's Manufacturer provides the MAC Address </strong>, on the other hand <strong>Internet Service Provider (ISP) provides IP Address</strong>.
+          </li>
+          <li>The main difference between MAC and IP address is that MAC Address is used to ensure the physical address of a computer. <strong>It uniquely identifies the devices on a network</strong>. While IP addresses are used to uniquely identify the connection of a network with that device taking part in a network.
+          </li>
+        </ol>
+      
+        <h2>Ipconfig and Ifconfig</h2>
+        <ol>
+          <li><strong>Ipconfig:</strong> Internet Protocol Configuration, It is a command used in Microsoft operating systems to view and configure network interfaces.
+          </li>
+          <li><strong>Ifconfig:</strong> Interface Configuration, It is a command used in MAC, Linux, UNIX operating systems to view and configure network interfaces.
+          </li>
+        </ol>
+      </div>
+      <div class="section">
+        <h2>Firewall</h2>
+        <p>The firewall is a network security system that is used to monitor the incoming and outgoing traffic and blocks the same based on the firewall security policies. It acts as a wall between the internet (public network) and the networking devices (a private network). It is either a hardware device, software program, or a combination of both. It adds a layer of security to the network.</p>
+      </div>
+      <div class="section">
+        <h2>Important Key Points</h2> 
+          <li><span>What happens when you enter google.com in the web browser? (Most Imp)</span>
+            <p>Steps:</p>
+            <ol>
+              <li>Check the browser cache first if the content is fresh and present in the cache display the same.</li>
+              <li>If not, the browser checks if the IP of the URL is present in the cache (browser and OS) if not then requests the OS to do a DNS lookup using UDP to get the corresponding IP address of the URL from the DNS server to establish a new TCP connection.</li>
+              <li>A new TCP connection is set between the browser and the server using three-way handshaking.</li>
+              <li>An HTTP request is sent to the server using the TCP connection.</li>
+              <li>The web servers running on the Servers handle the incoming HTTP request and send the HTTP response.</li>
+              <li>The browser processes the HTTP response sent by the server and may close the TCP connection or reuse the same for future requests.</li>
+              <li>If the response data is cacheable then browsers cache the same.</li>
+              <li>Browser decodes the response and renders the content.</li>
+            </ol>
+            
+          </li>
+          <li>
+            <span>Hub and Switch</span>
+            <p><strong>Hub:</strong> Hub is a networking device which is used to transmit the signal to each port (except one port) to respond from which the signal was received. Hub is operated on a Physical layer. In this packet filtering is not available. It is of two types: Active Hub, Passive Hub.</p>
+            <p><strong>Switch:</strong> Switch is a network device which is used to enable the connection establishment and connection termination on the basis of need. Switch is operated on the Data link layer. In this packet filtering is available. It is a type of full duplex transmission mode and it is also called an efficient bridge.</p>
+          </li>
+          <li>A subnet is a network inside a network achieved by the process called subnetting which helps divide a network into subnets. It is used for getting a higher routing efficiency and enhances the security of the network. It reduces the time to extract the host address from the routing table.
+          </li>
+          <li>
+            The reliability of a network can be measured by the following factors:
+            <ul>
+              <li>Downtime: The downtime is defined as the required time to recover.</li>
+              <li>Failure Frequency: It is the frequency when it fails to work the way it is intended.</li>
+              <li>Catastrophe: It indicates that the network has been attacked by some unexpected event such as fire, earthquake.</li>
+            </ul>
+          </li>
+          <li>
+            There are mainly two criteria which make a network effective and efficient:
+              <li>Performance: Performance can be measured in many ways like transmit time and response time.</li>
+              <li>Reliability: Reliability is measured by frequency of failure.</li>
+              <li>Robustness: Robustness specifies the quality or condition of being strong and in good condition.</li>
+              <li>Security: It specifies how to protect data from unauthorized access and viruses.</li>
+          
+          </li>
+          <li>
+            <strong>Node and Link:</strong> A network is a connection setup of two or more computers directly connected by some physical mediums like optical fiber or coaxial cable. This physical medium of connection is known as a link, and the computers that it is connected to are known as nodes.
+          </li>
+          <li>
+            <strong>Gateway and Router:</strong> A node that is connected to two or more networks is commonly known as a gateway. It is also known as a router. It is used to forward messages from one network to another. Both the gateway and router regulate the traffic in the network. Differences between gateway and router: A router sends the data between two similar networks while gateway sends the data between two dissimilar networks.
+          </li>
+          <li>
+          <strong>NIC (Imp):</strong> NIC stands for Network Interface Card. It is a peripheral card attached to the PC to connect to a network. Every NIC has its own MAC address that identifies the PC on the network. It provides a wireless connection to a local area network. NICs were mainly used in desktop computers.
+          </li>
+          <li>
+            <strong>POP3:</strong> POP3 stands for Post Office Protocol version3. POP is responsible for accessing the mail service on a client machine. POP3 works on two models such as Delete mode and Keep mode.
+          </li>
+    
+            <p><strong>Private IP Address:</strong> There are three ranges of IP addresses that have been reserved for IP addresses. They are not valid for use on the internet. If you want to access the internet on these private IPs, you must use a proxy server or NAT server.</p>
+            <p><strong>Public IP Address:</strong> A public IP address is an address taken by the Internet Service Provider which facilitates communication on the internet.</p>
+          
+          <li>
+            <strong>RAID:</strong> RAID (Redundant Array of Inexpensive/Independent Disks) is a method to provide Fault Tolerance by using multiple Hard Disc Drives.
+          </li>
+          <li>
+            <strong>Netstat:</strong> It is a command line utility program. It gives useful information about the current TCP/IP setting of a connection.
+          </li>
+          <li>
+            <strong>Ping:</strong> The "ping" is a utility program that allows you to check the connectivity between the network devices. You can ping devices using its IP address or name.
+          </li>
+          <li>
+            The processes on each machine that communicate at a given layer are called peer-peer processes (P2P).
+          </li>
+        
+            <p><strong>Unicasting:</strong> If the message is sent to a single node from the source then it is known as unicasting. This is commonly used in networks to establish a new connection.</p>
+            <p><strong>Anycasting:</strong> If the message is sent to any of the nodes from the source then it is known as anycasting. It is mainly used to get the content from any of the servers in the Content Delivery System.</p>
+            <p><strong>Multicasting:</strong> If the message is sent to a subset of nodes from the source then it is known as multicasting. Used to send the same data to multiple receivers.</p>
+            <p><strong>Broadcasting:</strong> If the message is sent to all the nodes in a network from a source then it is known as broadcasting. DHCP and ARP in the local network use broadcasting.</p>
+          
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024s Computer Networks. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
