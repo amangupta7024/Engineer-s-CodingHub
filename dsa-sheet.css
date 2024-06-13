@@ -127,6 +127,21 @@ nav ul li a:hover{
         transition: all 0.5s;
     }
 }
+@media (max-width:600px) {
+
+    .logo i{
+        font-size: 35px;
+    }
+    .logo span {
+        font-size: 14px; 
+        margin-top: 5px;
+    }
+    .logo p{
+       font-size: 12px;
+       left: 23px;
+    }
+
+  }
 
 
 table {

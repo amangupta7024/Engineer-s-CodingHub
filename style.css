@@ -160,14 +160,18 @@ nav ul li a:hover{
         font-size: 35px;
     }
     .logo span {
-        font-size: 16px; 
-        margin-top: 3px;
+        font-size: 14px; 
+        margin-top: 5px;
     }
     .logo p{
        font-size: 12px;
        left: 23px;
     }
 
+  }
+
+  .open-menu {
+    max-height: 300px;
   }
 
 
